@@ -18,7 +18,7 @@ public class Chess extends JFrame {
     private Graphics g;
     private Color rectColor = new Color(0xf5f5f5);
 
-    public void paintComponent(Graphics g) {
+    public void paint(Graphics g) {
         try {
             g.setColor(Color.black);
             int rw = size * w;
@@ -73,7 +73,7 @@ public class Chess extends JFrame {
 
         g = this.getGraphics();
         drawString(g,dc,dr);
-        paintComponent(g);
+        paint(g);
 
         this.addMouseListener(new MouseAdapter() {
             @Override
